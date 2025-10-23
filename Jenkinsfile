@@ -185,7 +185,7 @@ pipeline {
                 script {
                     withCredentials([usernamePassword(credentialsId: 'JIRA_TOKEN', usernameVariable: 'JIRA_USER', passwordVariable: 'JIRA_API_TOKEN')]) {
                         def auth = java.util.Base64.encoder.encodeToString("${JIRA_USER}:${JIRA_API_TOKEN}".getBytes("UTF-8"))
-                        def comentario = "Este ticket fue comentado por Lucaneitor"
+                        def comentario = "Este ticket fue comentado por Scarlet SC"
 
                         def response = sh(
                             script: """
